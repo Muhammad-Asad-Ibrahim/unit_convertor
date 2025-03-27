@@ -41,7 +41,10 @@ elif category == "Time":
     unit = st.selectbox("Select conversion", ["seconds to minutes", "minutes to seconds", "minutes to hours", "hours to minutes", "hours to days", "days to hours"])
 
 value = st.number_input("Enter the value to convert")    
-
+    
 if st.button("Convert"):
     result = convert_units(category, value, unit)
     st.success(f"The result is {result:.2f}")
+
+st.write("**Created by Muhammad Asad**")                          
+
